@@ -257,17 +257,17 @@
     <div class="container mx-auto" id="Contact">
         <footer>
             <div class="mx-5">
-                <form>
+                <form name="contact" method="POST" data-netlify="true">
                     <h5 class="display-4 fw-bold text-center">Contact Me 	
                         &#128222;</h5>
                     <p class="lead mb-4 text-center">Feel free to contact me!</p>
                     <div class="d-flex flex-column mb-3 w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Name</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Full Name">
-                        <label for="newsletter2" class="visually-hidden">Email address</label>
-                        <input id="newsletter2" type="text" class="form-control" placeholder="Email address">
-                        <label for="newsletter2" class="visually-hidden">Email address</label>
-                        <textarea class="form-control" placeholder="Enter Your Meassage" rows="4"></textarea>
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+                        <label for="email" class="visually-hidden">Email address</label>
+                        <input name="email" id="email" type="email" class="form-control" placeholder="Email address">
+                        <label for="message" class="visually-hidden">Email address</label>
+                        <textarea name="message" type="text" id="message" class="form-control" placeholder="Enter Your Meassage" rows="4"></textarea>
                     </div>
                     <button class="btn btn-dark" type="submit">Subscribe</button>
                 </form>
